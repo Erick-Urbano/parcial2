@@ -9,12 +9,12 @@ class SistemaTemperatura(Subsistema):
 
     def subir(self):
         self.temperatura += 1
-        print(f"🌡️ Temperatura actual: {self.temperatura}")
+        print(f"Temperatura actual: {self.temperatura}")
         if self.temperatura > self.max_temp:
             self.notificar("Temperatura demasiado alta.")
 
     def bajar(self):
         self.temperatura -= 1
-        print(f"🌡️ Temperatura actual: {self.temperatura}")
+        print(f"Temperatura actual: {self.temperatura}")
         if self.temperatura < self.min_temp:
             self.notificar("Temperatura demasiado baja.")

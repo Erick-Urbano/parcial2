@@ -8,10 +8,10 @@ class SistemaAcceso(Subsistema):
 
     def ingresar(self, usuario, contraseña):
         if usuario in self.usuarios and self.usuarios[usuario] == contraseña:
-            print("✅ Acceso permitido.")
+            print("Acceso permitido.")
             self.intentos_fallidos = 0
         else:
             self.intentos_fallidos += 1
-            print("❌ Acceso denegado.")
+            print("Acceso denegado.")
             if self.intentos_fallidos >= 3:
                 self.notificar("¡Alarma! Demasiados intentos fallidos.")

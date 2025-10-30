@@ -8,6 +8,6 @@ class SistemaResiduos(Subsistema):
 
     def agregar_residuo(self, cantidad):
         self.residuos += cantidad
-        print(f"🗑️ Residuos actuales: {self.residuos}")
+        print(f"Residuos actuales: {self.residuos}")
         if self.residuos > self.limite:
             self.notificar("Alerta: exceso de residuos sin evacuar.")
